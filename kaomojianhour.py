@@ -5,10 +5,10 @@ import tweepy, time, wikipedia
 from bs4 import BeautifulSoup
 
 #made them into variables in case I need to regenerate keys 
-consumer_key = 'x7G0ZEg3wxXu2vc0fcHNM90z1'
-secret_consumer_key = 'Y30mnZvhOyKTFLXSLP9nsGGDfX7UyWWZoFT6HMPHI2wPsPVkBk'
-access_token = '1092225188329066496-u2xQz6V9z5gv7biCZ0LSulwMJGwg9m'
-secret_access_token = 'm72plBHoTrG8QZ2ChKQ6VRiuQZenRjSFyXNE3bHf54uRm'
+consumer_key = 'CONSUMER_KEY'
+secret_consumer_key = 'SECRET_CONSUMER_KEY'
+access_token = 'ACCESS_TOKEN'
+secret_access_token = 'SECRET_ACCESS_TOKEN'
 
 auth = tweepy.OAuthHandler(consumer_key, secret_consumer_key)
 auth.set_access_token(access_token, secret_access_token)
