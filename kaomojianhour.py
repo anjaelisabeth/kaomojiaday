@@ -4,8 +4,8 @@ import tweepy, time, requests
 from bs4 import BeautifulSoup
 
 #made them into variables in case I need to regenerate keys 
-consumer_key = 'x7G0ZEg3wxXu2vc0fcHNM90z1'
-secret_consumer_key = 'CONSUMER KEY GOES HERE'
+consumer_key = 'CONSUMER KEY GOES HERE'
+secret_consumer_key = 'SECRET CONSUMER KEY GOES HERE'
 access_token = 'ACCESS TOKEN GOES HERE'
 secret_access_token = 'SECRET ACCESS TOKEN GOES HERE'
 
