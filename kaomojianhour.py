@@ -2,15 +2,15 @@
 
 import tweepy, time, requests
 from bs4 import BeautifulSoup
+from kaomojisecretkeys import Secrets
 
-#made them into variables in case I need to regenerate keys 
-consumer_key = 'CONSUMER KEY GOES HERE'
-secret_consumer_key = 'SECRET CONSUMER KEY GOES HERE'
-access_token = 'ACCESS TOKEN GOES HERE'
-secret_access_token = 'SECRET ACCESS TOKEN GOES HERE'
+consumer_key = Secrets.api_key
+secret_consumer_key = Secrets.secret_key
+access_token = Secrets.access_token
+access_token_secret = Secrets.access_token_secret
 
 auth = tweepy.OAuthHandler(consumer_key, secret_consumer_key)
-auth.set_access_token(access_token, secret_access_token)
+auth.set_access_token(access_token, access_token_secret)
 myapi = tweepy.API(auth)
 
 wiki = "https://en.wikipedia.org/wiki/List_of_emoticons"
@@ -42,11 +42,9 @@ def follow_back():
     for follower in followers:
         follower.follow()
     
-#def main():
-    #send_kaomoji_tweets()
-    #follow_back()
+def main():
+    send_kaomoji_tweets()
+    follow_back()
 
-#main()
+main()
 #myapi.update_profile_image('kaomojprofpic.jpg')
-
-   
